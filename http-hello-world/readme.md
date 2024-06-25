@@ -1,16 +1,28 @@
 # Hello World
 
-## Automated way with docker
+## Localhost teps
 
-### Requirements
+- clone
+- open in visual studio <= 2022
+- Run
+- Test
+
+```
+curl http://localhost:7234/api/Hello
+```
+
+## Azure Steps
+
+With this steps you will be able to deploy your function into a real azure subscription.
+
+**Requirements**
 
 - docker
 - azure account
 
-### Steps
 
 ```
-docker run -it -v $(pwd):/sandbox zenika/terraform-azure-cli
+docker run -it -v $(pwd):/sandbox jrichardsz/azure-cli-terraform:apine-3.19.1-azcli-2.61.0
 
 az login
 
